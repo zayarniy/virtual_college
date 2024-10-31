@@ -1,5 +1,5 @@
-const pathImages='images/'
-let pos=1;
+const pathImages='../plan_numerable/images/'
+let pos='00001';
 let elementPosInfo=document.getElementById('posInfo');
 let elementInputPos=document.getElementById('inputPos');
 let elementImage=document.getElementById('image');
@@ -27,7 +27,7 @@ function move(newPos)
 
 function loadImage(imageName)
 {
-    elementImage.src=pathImages+imageName+'.jpg';
+    elementImage.src=pathImages+String(imageName).padStart(5,'0')+'.jpg';
 }
 
 update();
