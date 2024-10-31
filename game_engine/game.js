@@ -1,5 +1,5 @@
-const pathImages='images/'
-let pos=1;
+const pathImages='../plan_numerable/images/'
+let pos='00001';
 let elementPosInfo=document.getElementById('posInfo');
 let elementInputPos=document.getElementById('inputPos');
 let elementImage=document.getElementById('image');
